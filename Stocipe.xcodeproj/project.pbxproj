@@ -1,0 +1,617 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C255FB1D2A5CCF0F007EFFB2 /* StocipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB1C2A5CCF0F007EFFB2 /* StocipeApp.swift */; };
+		C255FB1F2A5CCF0F007EFFB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB1E2A5CCF0F007EFFB2 /* ContentView.swift */; };
+		C255FB212A5CCF0F007EFFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */; };
+		C255FB252A5CCF0F007EFFB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C255FB242A5CCF0F007EFFB2 /* Preview Assets.xcassets */; };
+		C255FB2F2A5CCF0F007EFFB2 /* StocipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB2E2A5CCF0F007EFFB2 /* StocipeTests.swift */; };
+		C255FB392A5CCF0F007EFFB2 /* StocipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */; };
+		C255FB3B2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB3A2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C255FB2B2A5CCF0F007EFFB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C255FB112A5CCF0F007EFFB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C255FB182A5CCF0F007EFFB2;
+			remoteInfo = Stocipe;
+		};
+		C255FB352A5CCF0F007EFFB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C255FB112A5CCF0F007EFFB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C255FB182A5CCF0F007EFFB2;
+			remoteInfo = Stocipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C255FB192A5CCF0F007EFFB2 /* Stocipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C255FB1C2A5CCF0F007EFFB2 /* StocipeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeApp.swift; sourceTree = "<group>"; };
+		C255FB1E2A5CCF0F007EFFB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C255FB222A5CCF0F007EFFB2 /* Stocipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stocipe.entitlements; sourceTree = "<group>"; };
+		C255FB242A5CCF0F007EFFB2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C255FB2A2A5CCF0F007EFFB2 /* StocipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C255FB2E2A5CCF0F007EFFB2 /* StocipeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeTests.swift; sourceTree = "<group>"; };
+		C255FB342A5CCF0F007EFFB2 /* StocipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeUITests.swift; sourceTree = "<group>"; };
+		C255FB3A2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C255FB162A5CCF0F007EFFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C255FB272A5CCF0F007EFFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C255FB312A5CCF0F007EFFB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C255FB102A5CCF0F007EFFB2 = {
+			isa = PBXGroup;
+			children = (
+				C255FB1B2A5CCF0F007EFFB2 /* Stocipe */,
+				C255FB2D2A5CCF0F007EFFB2 /* StocipeTests */,
+				C255FB372A5CCF0F007EFFB2 /* StocipeUITests */,
+				C255FB1A2A5CCF0F007EFFB2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C255FB1A2A5CCF0F007EFFB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C255FB192A5CCF0F007EFFB2 /* Stocipe.app */,
+				C255FB2A2A5CCF0F007EFFB2 /* StocipeTests.xctest */,
+				C255FB342A5CCF0F007EFFB2 /* StocipeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C255FB1B2A5CCF0F007EFFB2 /* Stocipe */ = {
+			isa = PBXGroup;
+			children = (
+				C255FB1C2A5CCF0F007EFFB2 /* StocipeApp.swift */,
+				C255FB1E2A5CCF0F007EFFB2 /* ContentView.swift */,
+				C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */,
+				C255FB222A5CCF0F007EFFB2 /* Stocipe.entitlements */,
+				C255FB232A5CCF0F007EFFB2 /* Preview Content */,
+			);
+			path = Stocipe;
+			sourceTree = "<group>";
+		};
+		C255FB232A5CCF0F007EFFB2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C255FB242A5CCF0F007EFFB2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C255FB2D2A5CCF0F007EFFB2 /* StocipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C255FB2E2A5CCF0F007EFFB2 /* StocipeTests.swift */,
+			);
+			path = StocipeTests;
+			sourceTree = "<group>";
+		};
+		C255FB372A5CCF0F007EFFB2 /* StocipeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */,
+				C255FB3A2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift */,
+			);
+			path = StocipeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C255FB182A5CCF0F007EFFB2 /* Stocipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C255FB3E2A5CCF0F007EFFB2 /* Build configuration list for PBXNativeTarget "Stocipe" */;
+			buildPhases = (
+				C255FB152A5CCF0F007EFFB2 /* Sources */,
+				C255FB162A5CCF0F007EFFB2 /* Frameworks */,
+				C255FB172A5CCF0F007EFFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stocipe;
+			productName = Stocipe;
+			productReference = C255FB192A5CCF0F007EFFB2 /* Stocipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C255FB292A5CCF0F007EFFB2 /* StocipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C255FB412A5CCF0F007EFFB2 /* Build configuration list for PBXNativeTarget "StocipeTests" */;
+			buildPhases = (
+				C255FB262A5CCF0F007EFFB2 /* Sources */,
+				C255FB272A5CCF0F007EFFB2 /* Frameworks */,
+				C255FB282A5CCF0F007EFFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C255FB2C2A5CCF0F007EFFB2 /* PBXTargetDependency */,
+			);
+			name = StocipeTests;
+			productName = StocipeTests;
+			productReference = C255FB2A2A5CCF0F007EFFB2 /* StocipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C255FB332A5CCF0F007EFFB2 /* StocipeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C255FB442A5CCF0F007EFFB2 /* Build configuration list for PBXNativeTarget "StocipeUITests" */;
+			buildPhases = (
+				C255FB302A5CCF0F007EFFB2 /* Sources */,
+				C255FB312A5CCF0F007EFFB2 /* Frameworks */,
+				C255FB322A5CCF0F007EFFB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C255FB362A5CCF0F007EFFB2 /* PBXTargetDependency */,
+			);
+			name = StocipeUITests;
+			productName = StocipeUITests;
+			productReference = C255FB342A5CCF0F007EFFB2 /* StocipeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C255FB112A5CCF0F007EFFB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C255FB182A5CCF0F007EFFB2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C255FB292A5CCF0F007EFFB2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C255FB182A5CCF0F007EFFB2;
+					};
+					C255FB332A5CCF0F007EFFB2 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C255FB182A5CCF0F007EFFB2;
+					};
+				};
+			};
+			buildConfigurationList = C255FB142A5CCF0F007EFFB2 /* Build configuration list for PBXProject "Stocipe" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C255FB102A5CCF0F007EFFB2;
+			productRefGroup = C255FB1A2A5CCF0F007EFFB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C255FB182A5CCF0F007EFFB2 /* Stocipe */,
+				C255FB292A5CCF0F007EFFB2 /* StocipeTests */,
+				C255FB332A5CCF0F007EFFB2 /* StocipeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C255FB172A5CCF0F007EFFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C255FB252A5CCF0F007EFFB2 /* Preview Assets.xcassets in Resources */,
+				C255FB212A5CCF0F007EFFB2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C255FB282A5CCF0F007EFFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C255FB322A5CCF0F007EFFB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C255FB152A5CCF0F007EFFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C255FB1F2A5CCF0F007EFFB2 /* ContentView.swift in Sources */,
+				C255FB1D2A5CCF0F007EFFB2 /* StocipeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C255FB262A5CCF0F007EFFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C255FB2F2A5CCF0F007EFFB2 /* StocipeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C255FB302A5CCF0F007EFFB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C255FB3B2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift in Sources */,
+				C255FB392A5CCF0F007EFFB2 /* StocipeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C255FB2C2A5CCF0F007EFFB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C255FB182A5CCF0F007EFFB2 /* Stocipe */;
+			targetProxy = C255FB2B2A5CCF0F007EFFB2 /* PBXContainerItemProxy */;
+		};
+		C255FB362A5CCF0F007EFFB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C255FB182A5CCF0F007EFFB2 /* Stocipe */;
+			targetProxy = C255FB352A5CCF0F007EFFB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C255FB3C2A5CCF0F007EFFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C255FB3D2A5CCF0F007EFFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		C255FB3F2A5CCF0F007EFFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Stocipe/Stocipe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stocipe/Preview Content\"";
+				DEVELOPMENT_TEAM = M2HTHP8362;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haristariq.Stocipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C255FB402A5CCF0F007EFFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Stocipe/Stocipe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Stocipe/Preview Content\"";
+				DEVELOPMENT_TEAM = M2HTHP8362;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haristariq.Stocipe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C255FB422A5CCF0F007EFFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2HTHP8362;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haristariq.StocipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stocipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stocipe";
+			};
+			name = Debug;
+		};
+		C255FB432A5CCF0F007EFFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2HTHP8362;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haristariq.StocipeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stocipe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Stocipe";
+			};
+			name = Release;
+		};
+		C255FB452A5CCF0F007EFFB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2HTHP8362;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haristariq.StocipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stocipe;
+			};
+			name = Debug;
+		};
+		C255FB462A5CCF0F007EFFB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M2HTHP8362;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haristariq.StocipeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Stocipe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C255FB142A5CCF0F007EFFB2 /* Build configuration list for PBXProject "Stocipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C255FB3C2A5CCF0F007EFFB2 /* Debug */,
+				C255FB3D2A5CCF0F007EFFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C255FB3E2A5CCF0F007EFFB2 /* Build configuration list for PBXNativeTarget "Stocipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C255FB3F2A5CCF0F007EFFB2 /* Debug */,
+				C255FB402A5CCF0F007EFFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C255FB412A5CCF0F007EFFB2 /* Build configuration list for PBXNativeTarget "StocipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C255FB422A5CCF0F007EFFB2 /* Debug */,
+				C255FB432A5CCF0F007EFFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C255FB442A5CCF0F007EFFB2 /* Build configuration list for PBXNativeTarget "StocipeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C255FB452A5CCF0F007EFFB2 /* Debug */,
+				C255FB462A5CCF0F007EFFB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C255FB112A5CCF0F007EFFB2 /* Project object */;
+}
