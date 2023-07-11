@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var showLandingPage = true
     @State private var searchText = ""
     @State private var showAddNewItemMenu = false
+    @State private var capturedImage: UIImage?
+    @State private var isCameraViewPresented = false
     @State private var folders = ["Folder 1", "Folder 2", "Folder 3", "Folder 4"]
 
     var filteredFolders: [String] {
@@ -33,7 +35,7 @@ struct ContentView: View {
                             })
                             Menu {
                                 Button(action: {
-                                    // Handle opening the camera here
+                                    isCameraViewPresented = true
                                 }, label: {
                                     Label("Open Camera", systemImage: "camera")
                                 })
@@ -70,6 +72,9 @@ struct ContentView: View {
                         Text("Storage")
                     }
                     .tag(0)
+                    .sheet(isPresented: $isCameraViewPresented) {
+                        CameraView(capturedImage: $capturedImage)
+                    }
 
                 
                 Text("Shopping List")
