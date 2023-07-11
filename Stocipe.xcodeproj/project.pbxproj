@@ -14,7 +14,7 @@
 		C255FB2F2A5CCF0F007EFFB2 /* StocipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB2E2A5CCF0F007EFFB2 /* StocipeTests.swift */; };
 		C255FB392A5CCF0F007EFFB2 /* StocipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */; };
 		C255FB3B2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB3A2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift */; };
-		C255FB4A2A5D15CE007EFFB2 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB492A5D15CE007EFFB2 /* LandingPage.swift */; };
+		C2F326822A5D5C96007592F9 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F326812A5D5C96007592F9 /* LandingPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		C255FB342A5CCF0F007EFFB2 /* StocipeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocipeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeUITests.swift; sourceTree = "<group>"; };
 		C255FB3A2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C255FB492A5D15CE007EFFB2 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		C2F326812A5D5C96007592F9 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				C255FB1C2A5CCF0F007EFFB2 /* StocipeApp.swift */,
+				C2F326812A5D5C96007592F9 /* LandingPage.swift */,
 				C255FB1E2A5CCF0F007EFFB2 /* ContentView.swift */,
-				C255FB492A5D15CE007EFFB2 /* LandingPage.swift */,
 				C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */,
 				C255FB222A5CCF0F007EFFB2 /* Stocipe.entitlements */,
 				C255FB232A5CCF0F007EFFB2 /* Preview Content */,
@@ -264,7 +264,7 @@
 			files = (
 				C255FB1F2A5CCF0F007EFFB2 /* ContentView.swift in Sources */,
 				C255FB1D2A5CCF0F007EFFB2 /* StocipeApp.swift in Sources */,
-				C255FB4A2A5D15CE007EFFB2 /* LandingPage.swift in Sources */,
+				C2F326822A5D5C96007592F9 /* LandingPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

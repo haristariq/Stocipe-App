@@ -7,42 +7,54 @@
 
 import SwiftUI
 
+import SwiftUI
+
 struct ContentView: View {
     @State private var selectedTab = 0
+    @State private var showLandingPage = true
 
     var body: some View {
-        TabView(selection: $selectedTab) {
-            LandingPage()
-                .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-                .tag(0)
+        ZStack {
+            TabView(selection: $selectedTab) {
+                Text("Landing Page")
+                    .tabItem {
+                        Image(systemName: "house.fill")
+                        Text("Storage")
+                    }
+                    .tag(0)
+                
+                Text("Shopping List")
+                    .tabItem {
+                        Image(systemName: "magnifyingglass")
+                        Text("Shopping List")
+                    }
+                    .tag(1)
+                
+                Text("Recipe Builder")
+                    .tabItem {
+                        Image(systemName: "folder.fill")
+                        Text("Recipes")
+                    }
+                    .tag(2)
+                
+                Text("Settings")
+                    .tabItem {
+                        Image(systemName: "person.fill")
+                        Text("Settings")
+                    }
+                    .tag(3)
+            }
+            .disabled(showLandingPage)
 
-            // Add other views for the remaining tab items
-            Text("Second Tab")
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-                }
-                .tag(1)
-
-            Text("Third Tab")
-                .tabItem {
-                    Image(systemName: "folder.fill")
-                    Text("Folders")
-                }
-                .tag(2)
-
-            Text("Fourth Tab")
-                .tabItem {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
-                }
-                .tag(3)
+            if showLandingPage {
+                LandingPage(showLandingPage: $showLandingPage)
+            }
         }
     }
 }
+
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
