@@ -13,6 +13,5 @@ struct StocipeApp: App {
         WindowGroup {
             ContentView()
         }
-        
     }
 }
