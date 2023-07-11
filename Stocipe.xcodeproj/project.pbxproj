@@ -15,6 +15,7 @@
 		C255FB392A5CCF0F007EFFB2 /* StocipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */; };
 		C255FB3B2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB3A2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift */; };
 		C2F326822A5D5C96007592F9 /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F326812A5D5C96007592F9 /* LandingPage.swift */; };
+		C2F326842A5D61B3007592F9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F326832A5D61B3007592F9 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeUITests.swift; sourceTree = "<group>"; };
 		C255FB3A2A5CCF0F007EFFB2 /* StocipeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocipeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C2F326812A5D5C96007592F9 /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		C2F326832A5D61B3007592F9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				C2F326812A5D5C96007592F9 /* LandingPage.swift */,
 				C255FB1E2A5CCF0F007EFFB2 /* ContentView.swift */,
 				C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */,
+				C2F326832A5D61B3007592F9 /* SearchBar.swift */,
 				C255FB222A5CCF0F007EFFB2 /* Stocipe.entitlements */,
 				C255FB232A5CCF0F007EFFB2 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C255FB1F2A5CCF0F007EFFB2 /* ContentView.swift in Sources */,
+				C2F326842A5D61B3007592F9 /* SearchBar.swift in Sources */,
 				C255FB1D2A5CCF0F007EFFB2 /* StocipeApp.swift in Sources */,
 				C2F326822A5D5C96007592F9 /* LandingPage.swift in Sources */,
 			);

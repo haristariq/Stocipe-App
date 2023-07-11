@@ -12,16 +12,65 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedTab = 0
     @State private var showLandingPage = true
+    @State private var searchText = ""
+    @State private var showAddNewItemMenu = false
+    @State private var folders = ["Folder 1", "Folder 2", "Folder 3", "Folder 4"]
 
+    var filteredFolders: [String] {
+        if searchText.isEmpty {
+            return folders
+        } else {
+            return folders.filter { $0.localizedCaseInsensitiveContains(searchText) }
+        }
+    }
     var body: some View {
-        ZStack {
-            TabView(selection: $selectedTab) {
-                Text("Landing Page")
+            ZStack {
+                TabView(selection: $selectedTab) {
+                    VStack {
+                        HStack {
+                            SearchBar(text: $searchText, onCommit: {
+                                // Handle search commit event here
+                            })
+                            Menu {
+                                Button(action: {
+                                    // Handle opening the camera here
+                                }, label: {
+                                    Label("Open Camera", systemImage: "camera")
+                                })
+
+                                Button(action: {
+                                    // Handle scanning the barcode here
+                                }, label: {
+                                    Label("Scan Barcode", systemImage: "barcode.viewfinder")
+                                })
+
+                                Button(action: {
+                                    // Handle manual search through API catalogue here
+                                }, label: {
+                                    Label("Manual Search", systemImage: "magnifyingglass")
+                                })
+                            } label: {
+                                Image(systemName: "plus")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(5)
+                            }
+                        }
+                        .padding(.horizontal)
+
+                        List(filteredFolders, id: \.self) { folder in
+                            Text(folder)
+                        }
+                    }
                     .tabItem {
                         Image(systemName: "house.fill")
                         Text("Storage")
                     }
                     .tag(0)
+
                 
                 Text("Shopping List")
                     .tabItem {
