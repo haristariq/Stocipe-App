@@ -14,4 +14,4 @@ struct StocipeApp: App {
             ContentView()
         }
     }
-}
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
