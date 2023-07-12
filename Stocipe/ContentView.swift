@@ -8,6 +8,9 @@ struct ContentView: View {
     @StateObject private var foodSearchService = FoodSearchService()
     @State private var selectedItems: [FoodItem] = []
     @State private var activeSheet: ActiveSheet?
+    
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+
 
     enum ActiveSheet: Identifiable {
         case cameraView, manualSearch
@@ -68,6 +71,7 @@ struct ContentView: View {
                     }
                 
             }
+            .environment(\.colorScheme, isDarkMode ? .dark : .light) //dark light mode
             .disabled(showLandingPage)
             .sheet(item: $activeSheet) { item in
                 switch item {

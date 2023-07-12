@@ -5,10 +5,12 @@
 //  Created by Haris Tariq on 7/12/23.
 //
 
-import Foundation
 import SwiftUI
 
 struct ProfileView: View {
+    @AppStorage("isDarkMode") private var isDarkMode: Bool = false
+
+
     var body: some View {
         NavigationView {
             List {
@@ -21,7 +23,21 @@ struct ProfileView: View {
                             .font(.system(size: 20, weight: .regular))
                     }
                 }
-                // Add more items to the list as needed
+
+                
+
+                    Toggle(isOn: $isDarkMode) {
+                        HStack {
+                            Image(systemName: "circle.lefthalf.fill")
+                                .foregroundColor(.blue)
+                                .font(.system(size: 20, weight: .regular))
+                            Text("Dark Mode")
+                                .font(.system(size: 20, weight: .regular))
+                        }
+                    }
+                    .toggleStyle(SwitchToggleStyle(tint: .blue))
+
+            
             }
             .listStyle(InsetGroupedListStyle())
             .navigationTitle("Profile")
