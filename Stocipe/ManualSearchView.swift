@@ -99,6 +99,7 @@ struct ManualSearchView: View {
 
 import Foundation
 import SwiftUI
+import Combine
 
 struct ManualSearchView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -107,6 +108,7 @@ struct ManualSearchView: View {
     @State private var searchText = ""
     @State private var selectedItem: FoodItem?
     @State private var scaleValues: [Int: CGFloat] = [:]
+    private let debounceTime: TimeInterval = 0.3
 
     var body: some View {
         NavigationView {
@@ -117,6 +119,9 @@ struct ManualSearchView: View {
                 .padding()
                 .border(Color.gray, width: 0.5)
                 .submitLabel(.search)
+                .onChange(of: searchText) { newValue in
+                    debounceSearch(query: newValue)
+                }
                 List(foodSearchService.foodItems) { item in
                     Text(item.title)
                         .padding()
@@ -134,17 +139,30 @@ struct ManualSearchView: View {
         }
     }
 
+    @State private var lastSearchWorkItem: DispatchWorkItem?
+
+    private func debounceSearch(query: String) {
+        lastSearchWorkItem?.cancel()
+
+        let task = DispatchWorkItem {
+            self.foodSearchService.manualSearch(query: query)
+        }
+
+        lastSearchWorkItem = task
+        DispatchQueue.main.asyncAfter(deadline: .now() + debounceTime, execute: task)
+    }
+
     private func addItemToList(item: FoodItem) {
         withAnimation(.easeInOut(duration: 0.15)) {
             scaleValues[item.id] = 1.1
         }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
             withAnimation(.easeInOut(duration: 0.15)) {
                 scaleValues[item.id] = 1
             }
         }
-        
+
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             selectedItem = item
             selectedItems.append(item)
