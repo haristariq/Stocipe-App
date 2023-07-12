@@ -13,6 +13,7 @@ struct StocipeApp: App {
         WindowGroup {
             ContentView()
                 .accentColor(Color(hex: "668E47"))
+                .font(Font.custom("IndieFlower", size: 24))
         }
     }
 }

@@ -24,17 +24,21 @@ struct LandingPage: View {
 
             VStack {
                 Text("Stocipe")
-                    .font(.largeTitle)
+                    .font(Font.custom("IndieFlower", size: 64))
                     .bold()
+                    .padding(.bottom, 10)
 
-                Image(systemName: "appicon") // Replace with your app's logo
+                Image("artwork") // Replace with your app's logo
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150, height: 150)
+                    .padding(.bottom, 100)
 
                 Text("Tap to Begin")
-                    .font(.largeTitle)
+                    .font(Font.custom("IndieFlower", size: 34))
                     .foregroundColor(.black)
+                    .padding(.top, 150
+                    )
                   
             }
         }

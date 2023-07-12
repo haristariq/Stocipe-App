@@ -26,6 +26,7 @@
 		C2F7D75C2A5E922E00D2D99F /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F7D75B2A5E922E00D2D99F /* PhotoDetailView.swift */; };
 		C2F7D75E2A5E931C00D2D99F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F7D75D2A5E931C00D2D99F /* ProfileView.swift */; };
 		C2F7D7662A5EC56400D2D99F /* RecipeBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F7D7652A5EC56400D2D99F /* RecipeBuilderView.swift */; };
+		C2F7D7692A5ECBC100D2D99F /* IndieFlower-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C2F7D7672A5ECA3B00D2D99F /* IndieFlower-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		C2F7D75B2A5E922E00D2D99F /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
 		C2F7D75D2A5E931C00D2D99F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		C2F7D7652A5EC56400D2D99F /* RecipeBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBuilderView.swift; sourceTree = "<group>"; };
+		C2F7D7672A5ECA3B00D2D99F /* IndieFlower-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IndieFlower-Regular.ttf"; sourceTree = "<group>"; };
+		C2F7D7682A5ECA5E00D2D99F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		C255FB1B2A5CCF0F007EFFB2 /* Stocipe */ = {
 			isa = PBXGroup;
 			children = (
+				C2F7D7682A5ECA5E00D2D99F /* Info.plist */,
 				C255FB1C2A5CCF0F007EFFB2 /* StocipeApp.swift */,
 				C2F326812A5D5C96007592F9 /* LandingPage.swift */,
 				C2F3268B2A5D6EA1007592F9 /* FoodSearchService.swift */,
@@ -126,6 +130,7 @@
 				C2F326892A5D68C3007592F9 /* BarcodeScannerView.swift */,
 				C2F326932A5E7C1C007592F9 /* SelectedItemsView.swift */,
 				C2F326872A5D6532007592F9 /* CameraView.swift */,
+				C2F7D7672A5ECA3B00D2D99F /* IndieFlower-Regular.ttf */,
 				C2F7D75B2A5E922E00D2D99F /* PhotoDetailView.swift */,
 				C2F3268F2A5D76F8007592F9 /* ManualSearchView.swift */,
 				C2F7D7652A5EC56400D2D99F /* RecipeBuilderView.swift */,
@@ -269,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F7D7692A5ECBC100D2D99F /* IndieFlower-Regular.ttf in Resources */,
 				C2F326922A5D8121007592F9 /* Assets.xcassets in Resources */,
 				C255FB252A5CCF0F007EFFB2 /* Preview Assets.xcassets in Resources */,
 			);
@@ -468,6 +474,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stocipe/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to capture the reference storage photos";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -478,7 +485,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -508,6 +514,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Stocipe/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to capture the reference storage photos";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -518,7 +525,6 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
