@@ -12,6 +12,7 @@ struct StocipeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .accentColor(Color(hex: "668E47"))
         }
     }
 }

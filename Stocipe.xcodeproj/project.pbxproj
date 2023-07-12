@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C255FB1D2A5CCF0F007EFFB2 /* StocipeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB1C2A5CCF0F007EFFB2 /* StocipeApp.swift */; };
 		C255FB1F2A5CCF0F007EFFB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB1E2A5CCF0F007EFFB2 /* ContentView.swift */; };
-		C255FB212A5CCF0F007EFFB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */; };
 		C255FB252A5CCF0F007EFFB2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C255FB242A5CCF0F007EFFB2 /* Preview Assets.xcassets */; };
 		C255FB2F2A5CCF0F007EFFB2 /* StocipeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB2E2A5CCF0F007EFFB2 /* StocipeTests.swift */; };
 		C255FB392A5CCF0F007EFFB2 /* StocipeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C255FB382A5CCF0F007EFFB2 /* StocipeUITests.swift */; };
@@ -18,6 +17,10 @@
 		C2F326842A5D61B3007592F9 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F326832A5D61B3007592F9 /* SearchBar.swift */; };
 		C2F326882A5D6532007592F9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F326872A5D6532007592F9 /* CameraView.swift */; };
 		C2F3268A2A5D68C3007592F9 /* BarcodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F326892A5D68C3007592F9 /* BarcodeScannerView.swift */; };
+		C2F3268C2A5D6EA1007592F9 /* FoodSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3268B2A5D6EA1007592F9 /* FoodSearchService.swift */; };
+		C2F3268E2A5D6FB1007592F9 /* FolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3268D2A5D6FB1007592F9 /* FolderView.swift */; };
+		C2F326902A5D76F8007592F9 /* ManualSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F3268F2A5D76F8007592F9 /* ManualSearchView.swift */; };
+		C2F326922A5D8121007592F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		C2F326832A5D61B3007592F9 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		C2F326872A5D6532007592F9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		C2F326892A5D68C3007592F9 /* BarcodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerView.swift; sourceTree = "<group>"; };
+		C2F3268B2A5D6EA1007592F9 /* FoodSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodSearchService.swift; sourceTree = "<group>"; };
+		C2F3268D2A5D6FB1007592F9 /* FolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderView.swift; sourceTree = "<group>"; };
+		C2F3268F2A5D76F8007592F9 /* ManualSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +111,14 @@
 			children = (
 				C255FB1C2A5CCF0F007EFFB2 /* StocipeApp.swift */,
 				C2F326812A5D5C96007592F9 /* LandingPage.swift */,
+				C2F3268B2A5D6EA1007592F9 /* FoodSearchService.swift */,
 				C255FB1E2A5CCF0F007EFFB2 /* ContentView.swift */,
 				C2F326892A5D68C3007592F9 /* BarcodeScannerView.swift */,
 				C2F326872A5D6532007592F9 /* CameraView.swift */,
-				C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */,
+				C2F3268F2A5D76F8007592F9 /* ManualSearchView.swift */,
+				C2F3268D2A5D6FB1007592F9 /* FolderView.swift */,
 				C2F326832A5D61B3007592F9 /* SearchBar.swift */,
+				C255FB202A5CCF0F007EFFB2 /* Assets.xcassets */,
 				C255FB222A5CCF0F007EFFB2 /* Stocipe.entitlements */,
 				C255FB232A5CCF0F007EFFB2 /* Preview Content */,
 			);
@@ -245,8 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F326922A5D8121007592F9 /* Assets.xcassets in Resources */,
 				C255FB252A5CCF0F007EFFB2 /* Preview Assets.xcassets in Resources */,
-				C255FB212A5CCF0F007EFFB2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +281,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F3268A2A5D68C3007592F9 /* BarcodeScannerView.swift in Sources */,
+				C2F326902A5D76F8007592F9 /* ManualSearchView.swift in Sources */,
 				C255FB1F2A5CCF0F007EFFB2 /* ContentView.swift in Sources */,
+				C2F3268E2A5D6FB1007592F9 /* FolderView.swift in Sources */,
 				C2F326842A5D61B3007592F9 /* SearchBar.swift in Sources */,
+				C2F3268C2A5D6EA1007592F9 /* FoodSearchService.swift in Sources */,
 				C2F326882A5D6532007592F9 /* CameraView.swift in Sources */,
 				C255FB1D2A5CCF0F007EFFB2 /* StocipeApp.swift in Sources */,
 				C2F326822A5D5C96007592F9 /* LandingPage.swift in Sources */,
@@ -427,6 +439,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Stocipe/Stocipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -466,6 +479,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Stocipe/Stocipe.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
