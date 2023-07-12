@@ -30,11 +30,14 @@ struct ContentView: View {
             TabView(selection: $selectedTab) {
                 VStack {
                     HeaderView(searchText: $searchText, activeSheet: $activeSheet)
-                    
+
                     List {
                         ForEach(filteredItems) { foodItem in
                             Text(foodItem.title)
                         }
+                    }
+                    .onAppear {
+                        loadSelectedItems()
                     }
                 }
                 .tabItem {
@@ -73,9 +76,18 @@ struct ContentView: View {
                     ManualSearchView(selectedItems: $selectedItems, foodSearchService: foodSearchService)
                 }
             }
-            
+
             if showLandingPage {
                 LandingPage(showLandingPage: $showLandingPage)
+            }
+        }
+    }
+
+    func loadSelectedItems() {
+        if let savedData = UserDefaults.standard.data(forKey: "selectedItems") {
+            let decoder = JSONDecoder()
+            if let decodedItems = try? decoder.decode([FoodItem].self, from: savedData) {
+                selectedItems = decodedItems
             }
         }
     }
@@ -120,6 +132,7 @@ struct HeaderView: View {
         .padding(.horizontal)
     }
 }
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

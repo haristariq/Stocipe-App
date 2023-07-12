@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-struct FoodItem: Decodable, Identifiable {
+struct FoodItem: Codable, Identifiable {
     let id: Int
     let title: String
 }

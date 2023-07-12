@@ -106,16 +106,13 @@ struct ManualSearchView: View {
     @Binding var selectedItems: [FoodItem]
     @ObservedObject var foodSearchService: FoodSearchService
     @State private var searchText = ""
-    @State private var selectedItem: FoodItem?
     @State private var scaleValues: [Int: CGFloat] = [:]
     private let debounceTime: TimeInterval = 0.3
 
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Search", text: $searchText, onCommit: {
-                    foodSearchService.manualSearch(query: searchText)
-                })
+                TextField("Search", text: $searchText)
                 .padding()
                 .border(Color.gray, width: 0.5)
                 .submitLabel(.search)
@@ -164,8 +161,15 @@ struct ManualSearchView: View {
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            selectedItem = item
             selectedItems.append(item)
+            saveSelectedItems()
+        }
+    }
+    
+    func saveSelectedItems() {
+        let encoder = JSONEncoder()
+        if let encodedData = try? encoder.encode(selectedItems) {
+            UserDefaults.standard.set(encodedData, forKey: "selectedItems")
         }
     }
 }
