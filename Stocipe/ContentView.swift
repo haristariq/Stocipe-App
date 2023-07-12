@@ -35,6 +35,7 @@ struct ContentView: View {
                         ForEach(filteredItems) { foodItem in
                             Text(foodItem.title)
                         }
+                        .onDelete(perform: deleteItem)
                     }
                     .onAppear {
                         loadSelectedItems()
@@ -89,6 +90,18 @@ struct ContentView: View {
             if let decodedItems = try? decoder.decode([FoodItem].self, from: savedData) {
                 selectedItems = decodedItems
             }
+        }
+    }
+
+    private func deleteItem(at offsets: IndexSet) {
+        selectedItems.remove(atOffsets: offsets)
+        saveSelectedItems()
+    }
+
+    func saveSelectedItems() {
+        let encoder = JSONEncoder()
+        if let encodedData = try? encoder.encode(selectedItems) {
+            UserDefaults.standard.set(encodedData, forKey: "selectedItems")
         }
     }
 }
