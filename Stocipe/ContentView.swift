@@ -61,12 +61,12 @@ struct ContentView: View {
                     }
                     .tag(2)
 
-                Text("Settings")
+                ProfileView() // Replace the ImageGallery with ProfileView
                     .tabItem {
-                        Image(systemName: "person.fill")
-                        Text("Settings")
+                        Image(systemName: "person.crop.circle")
+                        Text("Profile")
                     }
-                    .tag(3)
+                
             }
             .disabled(showLandingPage)
             .sheet(item: $activeSheet) { item in
