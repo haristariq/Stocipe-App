@@ -8,9 +8,9 @@ struct ContentView: View {
     @StateObject private var foodSearchService = FoodSearchService()
     @State private var selectedItems: [FoodItem] = []
     @State private var activeSheet: ActiveSheet?
+    @State private var showRecipeBuilder = false
     
     @AppStorage("isDarkMode") private var isDarkMode: Bool = false
-
 
     enum ActiveSheet: Identifiable {
         case cameraView, manualSearch
@@ -57,12 +57,28 @@ struct ContentView: View {
                     }
                     .tag(1)
 
-                Text("Recipe Builder")
-                    .tabItem {
-                        Image(systemName: "folder.fill")
-                        Text("Recipes")
+                VStack {
+                    Button(action: {
+                        foodSearchService.generateRecipes(selectedItems: selectedItems)
+                        showRecipeBuilder.toggle()
+                    }) {
+                        Text("Generate Recipe")
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(8)
                     }
-                    .tag(2)
+                    .padding()
+                    .sheet(isPresented: $showRecipeBuilder) {
+                        RecipeBuilderView(foodSearchService: foodSearchService)
+                    }
+                }
+                .tabItem {
+                    Image(systemName: "folder.fill")
+                    Text("Recipes")
+                }
+                .tag(2)
 
                 ProfileView() // Replace the ImageGallery with ProfileView
                     .tabItem {
@@ -87,6 +103,7 @@ struct ContentView: View {
             }
         }
     }
+
 
     func loadSelectedItems() {
         if let savedData = UserDefaults.standard.data(forKey: "selectedItems") {
