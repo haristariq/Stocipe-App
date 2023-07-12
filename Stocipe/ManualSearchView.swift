@@ -106,7 +106,7 @@ struct ManualSearchView: View {
     @Binding var selectedItems: [FoodItem]
     @ObservedObject var foodSearchService: FoodSearchService
     @State private var searchText = ""
-    @State private var scaleValues: [Int: CGFloat] = [:]
+    @State private var scaleValues: [String: CGFloat] = [:]
     private let debounceTime: TimeInterval = 0.3
 
     var body: some View {
@@ -142,7 +142,7 @@ struct ManualSearchView: View {
         lastSearchWorkItem?.cancel()
 
         let task = DispatchWorkItem {
-            self.foodSearchService.manualSearch(query: query)
+            self.foodSearchService.manualSearch(query:query)
         }
 
         lastSearchWorkItem = task

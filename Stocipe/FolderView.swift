@@ -25,6 +25,6 @@ struct FolderView: View {
 
 struct FolderView_Previews: PreviewProvider {
     static var previews: some View {
-        FolderView(selectedItems: .constant([FoodItem(id: 1, title: "Sample Item 1"), FoodItem(id: 2, title: "Sample Item 2")]))
+        FolderView(selectedItems: .constant([FoodItem(id: "1", title: "Sample Item 1"), FoodItem(id: "2", title: "Sample Item 2")]))
     }
 }

@@ -8,11 +8,6 @@
 import Foundation
 import Combine
 
-struct FoodItem: Codable, Identifiable {
-    let id: Int
-    let title: String
-}
-
 class FoodSearchService: ObservableObject {
     @Published var foodItems: [FoodItem] = []
     @Published var searchQuery = "" {
@@ -48,47 +43,22 @@ class FoodSearchService: ObservableObject {
         fetchFoodItems(query)
     }
     
-    /* private func fetchFoodItems(_ query: String) {
-     // Check if the query is not empty before making the API call
-     guard !query.isEmpty else { return }
-     
-     let apiKey = "e383f49d344b4fe991fb30d39bc4f2a3"
-     let urlString = "https://api.spoonacular.com/recipes/complexSearch?query=\(query)&apiKey=\(apiKey)"
-     
-     guard let url = URL(string: urlString) else { return }
-     
-     URLSession.shared.dataTask(with: url) { data, response, error in
-     if let data = data {
-     do {
-     let decodedResponse = try JSONDecoder().decode(SpoonacularResponse.self, from: data)
-     DispatchQueue.main.async {
-     self.foodItems = decodedResponse.results
-     }
-     } catch {
-     print("Error decoding data: \(error)")
-     }
-     } else if let error = error {
-     print("Error fetching data: \(error)")
-     }
-     }.resume()
-     }
-     } */
-    
     private func fetchFoodItems(_ query: String) {
         // Check if the query is not empty before making the API call
         guard !query.isEmpty else { return }
         
-        let apiKey = "a4258a3a62534026a8acc217b91d2a7d"
-        let urlString = "https://api.spoonacular.com/recipes/complexSearch?query=\(query)&apiKey=\(apiKey)"
+        let appId = "1f16ec19"
+        let appKey = "14763beb1b497935ac6a9267c0b7ba3b"
+        let urlString = "https://api.edamam.com/api/food-database/v2/parser?ingr=\(query)&app_id=\(appId)&app_key=\(appKey)"
         
         guard let url = URL(string: urlString) else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let data = data {
                 do {
-                    let decodedResponse = try JSONDecoder().decode(SpoonacularResponse.self, from: data)
+                    let decodedResponse = try JSONDecoder().decode(EdamamFoodDatabaseResponse.self, from: data)
                     DispatchQueue.main.async {
-                        self.foodItems = Array(decodedResponse.results.prefix(10))
+                        self.foodItems = decodedResponse.hints.map { $0.food }
                     }
                 } catch {
                     print("Error decoding data: \(error)")
@@ -100,6 +70,31 @@ class FoodSearchService: ObservableObject {
     }
 }
 
-struct SpoonacularResponse: Decodable {
-    let results: [FoodItem]
+
+struct FoodItem: Codable, Identifiable {
+    let id: String
+    let title: String
+
+    enum CodingKeys: String, CodingKey {
+        case id = "foodId"
+        case title = "label"
+    }
+}
+
+struct EdamamFoodDatabaseResponse: Decodable {
+    let hints: [Hint]
+}
+
+struct Hint: Decodable {
+    let food: FoodItem
+}
+
+extension FoodItem: Hashable {
+    static func == (lhs: FoodItem, rhs: FoodItem) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
 }
