@@ -10,45 +10,43 @@ struct ImageGallery: View {
     @State private var images: [UIImage] = []
     @State private var selectedImage: UIImage?
     @State private var showDeleteAlert = false
-
+    
     var body: some View {
-        NavigationView {
-            ScrollView {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
-                    ForEach(images, id: \.self) { image in
-                        NavigationLink(destination: PhotoDetailView(image: image)) {
-                            Image(uiImage: image)
-                                .resizable()
-                                .scaledToFit()
-                        }
-                        .buttonStyle(PlainButtonStyle())
-                        .contextMenu {
-                            Button(action: {
-                                selectedImage = image
-                                showDeleteAlert.toggle()
-                            }, label: {
-                                Label("Delete", systemImage: "trash")
-                            })
-                        }
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100))]) {
+                ForEach(images, id: \.self) { image in
+                    NavigationLink(destination: PhotoDetailView(image: image)) {
+                        Image(uiImage: image)
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .contextMenu {
+                        Button(action: {
+                            selectedImage = image
+                            showDeleteAlert.toggle()
+                        }, label: {
+                            Label("Delete", systemImage: "trash")
+                        })
                     }
                 }
-                .padding()
             }
-            .alert(isPresented: $showDeleteAlert, content: {
-                Alert(title: Text("Are you sure you want to delete this photo?"),
-                      primaryButton: .destructive(Text("Delete")) {
-                          if let image = selectedImage {
-                              deleteImage(image: image)
-                          }
-                      },
-                      secondaryButton: .cancel())
-            })
-            .navigationTitle("Image Gallery")
-            .onAppear {
-                loadImages()
-            }
+            .padding()
         }
-    }
+        .alert(isPresented: $showDeleteAlert, content: {
+            Alert(title: Text("Are you sure you want to delete this photo?"),
+                  primaryButton: .destructive(Text("Delete")) {
+                if let image = selectedImage {
+                    deleteImage(image: image)
+                }
+            },
+                  secondaryButton: .cancel())
+        })
+        .navigationTitle("Image Gallery")
+        .onAppear {
+            loadImages()
+        }
+}
     
     func deleteImage(image: UIImage) {
         if let index = images.firstIndex(of: image) {
